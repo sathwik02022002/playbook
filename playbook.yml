@@ -1,9 +1,9 @@
 ---
-- hosts: all
+- hosts: mywebservers
   become: yes
   tasks: 
   - name: install java on ubuntu
     apt:
-     name: openjdk-8-jre
+     name: "{{mywebservers}}"
      state: present
     when: ansible_os_family=="Debain"
