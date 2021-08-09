@@ -1,2 +1,12 @@
 ---
 # tasks file for mytomcat
+- include_tasks: installjava.yml
+- include_tasks: createUserGroup.yml
+- include_tasks: installtomcat.yml
+- include_tasks: Permissions.yml
+- include_tasks: tomservicefile.yml
+- include_tasks: starttomcat.yml
+- include_tasks: tomwebManagement.yml
+- include_tasks: restarttomcat.yml
+- include_tasks: myjavaappdeploy.yml
+- include_tasks: restarttomcat.yml
